@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-
 import '../pages/chat_page.dart';
 import '../widgets/widgets.dart';
+import 'package:flutter/material.dart';
 
 class GroupTile extends StatefulWidget {
   final String userName;
@@ -26,8 +25,8 @@ class _GroupTileState extends State<GroupTile> {
         nextScreen(
             context,
             ChatPage(
-              grpId: widget.groupId,
-              grpName: widget.groupName,
+              groupId: widget.groupId,
+              groupName: widget.groupName,
               userName: widget.userName,
             ));
       },

@@ -167,16 +167,11 @@ class _ProfilePageState extends State<ProfilePage> {
                   "Email",
                   style: TextStyle(fontSize: 17),
                 ),
-                const SizedBox(
-                  width: 70,
-                ),
-                Expanded(
-                  child: Text(
-                    widget.email,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      fontSize: 17,
-                    ),
+                Text(
+                  widget.email,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontSize: 17,
                   ),
                 )
               ],
